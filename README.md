@@ -4,6 +4,17 @@ Este projeto é a versão local do sistema de reservas de laboratórios da UFOPA
 
 ---
 
+## Requisitos para rodar o sistema localmente
+
+Antes de iniciar, certifique-se de ter instalado em sua máquina:
+
+- [Node.js](https://nodejs.org/) (versão 18 ou superior)
+- [npm](https://www.npmjs.com/) (geralmente vem junto com o Node.js)
+- [PostgreSQL](https://www.postgresql.org/) rodando localmente na porta padrão 5432
+- Git (opcional, mas recomendado)
+
+---
+
 ## Funcionalidades de Segurança Implementadas
 
 Todas as medidas abaixo foram implementadas no código e podem ser verificadas nos arquivos citados:
@@ -66,7 +77,7 @@ npm install
 #### 2.1. Crie o arquivo `.env`
 
 ```env
-DATABASE_URL="postgresql://postgres:1234@localhost:5432/reservalabs"
+DATABASE_URL="postgresql://postgres:SENHA_AQUI@localhost:5432/reservalabs"
 JWT_SECRET=reservalab123@2025
 EMAIL_FROM=gcarlosdavi@gmail.com
 EMAIL_PASSWORD=sua_senha_app
@@ -79,7 +90,18 @@ FRONTEND_URL=http://localhost:5173
 npx prisma migrate dev --name init
 ```
 
-#### 2.3. Inicie o servidor
+#### 2.3. Popule o banco com o administrador padrão
+
+```bash
+npx prisma db seed
+```
+
+Um usuário administrador será criado automaticamente com:
+
+- Email: `carlos@example.com`
+- Senha: `123456`
+
+#### 2.4. Inicie o servidor
 
 ```bash
 npm run dev
@@ -120,13 +142,6 @@ Acesse: [http://localhost:5173](http://localhost:5173)
 
 Acesse a versão online do sistema aqui:  
 [https://reserva-labs.vercel.app](https://reserva-labs.vercel.app)
-
----
-
-## Acesso de Administrador
-
-E-mail: `carlos@example.com`  
-Senha: `123456`
 
 ---
 
