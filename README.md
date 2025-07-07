@@ -61,7 +61,7 @@ Todas as medidas abaixo foram implementadas no código e podem ser verificadas n
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/reserva-labs.git
+git clone https://github.com/CarlosDavi12/reserva-lab-local.git
 cd reserva-labs
 ```
 
