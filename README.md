@@ -62,7 +62,7 @@ Todas as medidas abaixo foram implementadas no código e podem ser verificadas n
 
 ```bash
 git clone https://github.com/CarlosDavi12/reserva-lab-local.git
-cd reserva-labs
+cd reserva-lab-local
 ```
 
 ---
