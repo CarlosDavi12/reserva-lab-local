@@ -66,7 +66,7 @@ npm install
 #### 2.1. Crie o arquivo `.env`
 
 ```env
-DATABASE_URL="postgresql://postgres:1234@localhost:5432/reservalabs"
+DATABASE_URL="postgresql://postgres:SENHA_AQUI@localhost:5432/reservalabs"
 JWT_SECRET=reservalab123@2025
 EMAIL_FROM=gcarlosdavi@gmail.com
 EMAIL_PASSWORD=sua_senha_app
