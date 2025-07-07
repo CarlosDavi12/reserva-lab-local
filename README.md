@@ -116,7 +116,7 @@ Acesse: [http://localhost:5173](http://localhost:5173)
 
 ---
 
-## 🔗 Versão em produção
+## Versão em produção
 
 Acesse a versão online do sistema aqui:  
 [https://reserva-labs.vercel.app](https://reserva-labs.vercel.app)
